@@ -68,6 +68,15 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.Vi h2{
+    font-size: 14px;
+    right: 20px;
+    top: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    opacity: 0;
+}
 /*  */
 .back{
     border-radius: 2rem;
@@ -164,15 +173,7 @@ body{
     transition: 1s ease-in-out;
     opacity: 0;
 }
-.Vi h2{
-    font-size: 14px;
-    right: 20px;
-    top: 10px;
-    font-weight: bold;
-    line-height: 1.2;
-    position: absolute;
-    opacity: 0;
-}
+
 
 .desc{
     border-image: linear-gradient(to bottom, transparent
