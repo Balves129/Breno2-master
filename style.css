@@ -20,11 +20,6 @@ body{
     transition: 1s ease-in-out;
     position: relative;
 }
-.image{
-    float: right;
-    max-width: 100px;
-    max-height: 100px;
-}
 .card:hover{
     transform: translateY(-180deg);
     transition-delay: 1s ease-in-out;
@@ -110,6 +105,31 @@ body{
     text-align: center;
 
 }
+.Vi{
+    border-radius: 2rem;
+    height: 150px;
+    width: 83px;
+    margin: 2rem;
+    padding: 4rem;
+    position: absolute;
+    left: 720px;
+    z-index: -1;
+    display: flex;
+    text-align: center;
+}
+.Vi h2{
+    font-size: 14px;
+    right: 20px;
+    top: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    opacity: 0;
+}
+.card:hover + .Vi h2{
+    opacity: 1;
+    transition: 4s ease-in-out;
+}
 .desc{
     border-image: linear-gradient(to bottom, transparent
     ,#000, transparent) 3;
@@ -178,6 +198,14 @@ body{
     border-right: transparent ;
     box-shadow:  6px 6px 12px 0px rgb(0, 0, 0);
     background-image: url(zed.png);
+}
+.fourth{
+    border-image: linear-gradient(to bottom left,
+    transparent,rgb(0, 0, 0),
+    transparent)3;
+    border-right: transparent ;
+    box-shadow:  6px 6px 12px 0px rgb(0, 0, 0);
+    background-image: url(viLol.png);
 }
 .descrição{
 border-image: linear-gradient(to bottom, transparent
