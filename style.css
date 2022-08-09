@@ -1,0 +1,188 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase; 
+    flex-wrap: wrap;
+}
+.card{
+    border-radius: 2rem;
+    box-shadow: 7px 7px 14px 0px rgba(50, 50, 50, 0.23);
+    padding: 4rem;
+    margin: 1em;
+    width: 80px;
+    height: 150px;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+.image{
+    float: right;
+    max-width: 100px;
+    max-height: 100px;
+}
+.card:hover{
+    transform: translateY(-180deg);
+    transition-delay: 1s ease-in-out;
+    overflow: hidden;
+    opacity: 0;
+   
+}
+.card:hover + .back h2{
+    opacity: 1;
+    transition: 4s ease-in-out;
+}
+
+/* edição de texto */
+.card p{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel' bold;
+    line-height: 10.6;
+}
+.gradient{
+    background-image: linear-gradient(
+        to bottom, rebeccapurple ,#3bd9d9
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+.cor{
+    color: #A0522D;
+}
+/*  */
+.back{
+    border-radius: 2rem;
+    box-shadow: 7px 7px 14px 0px rgba(50, 50, 50, 0.23);
+    height: 150px;
+    width: 83px;
+    margin: 2rem;
+    padding: 4rem;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.back h2{
+    font-size: 16px;
+    right: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    opacity: 0;
+    background-image: linear-gradient(
+        270deg,rebeccapurple ,#3bd9d9
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.warwick{
+    border-radius: 2rem;
+    height: 150px;
+    width: 83px;
+    margin: 2rem;
+    padding: 4rem;
+    position: absolute;
+    left: 240px;
+    z-index: -1;
+    display: flex;
+    text-align: center;
+    
+}
+.Zed{
+    border-radius: 2rem;
+    height: 150px;
+    width: 83px;
+    margin: 2rem;
+    padding: 4rem;
+    position: absolute;
+    left: 490px;
+    z-index: -1;
+    display: flex;
+    text-align: center;
+
+}
+.desc{
+    border-image: linear-gradient(to bottom, transparent
+    ,#000, transparent) 3;
+    border-right: transparent;
+    box-shadow: 6px 6px 12px 0px rgb(0, 0, 0);
+}
+.warwick h2{
+    font-size: 14px;
+    right: 20px;
+    top: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    opacity: 0;
+    background-image: linear-gradient( 270deg,#00dd00 ,#006900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card:hover + .warwick h2{
+    opacity: 1;
+    transition: 4s ease-in-out;
+}
+.Zed h2{
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    opacity: 0;
+    background-image: linear-gradient( 270deg,#2da8a8 ,#4169e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card:hover + .Zed h2{
+    opacity: 1;
+    transition: 4s ease-in-out;
+}
+
+.end{
+    border-image: linear-gradient(to bottom, transparent
+    ,#000, transparent) 3;
+    border-right: transparent;
+    box-shadow: 6px 6px 12px 0px rgb(0, 0, 0);
+
+}
+
+.container{
+    border-image: linear-gradient(to bottom, transparent
+    ,#000, transparent) 3;
+    border-right: transparent;
+    box-shadow: 6px 6px 12px 0px rgb(0, 0, 0);
+    background-image: url(jinx.png);
+}
+.second{
+    border-image: linear-gradient(to bottom left,
+    transparent,rgb(0, 0, 0),
+    transparent)3;
+    border-right: transparent ;
+    box-shadow:  6px 6px 12px 0px rgb(0, 0, 0);
+    background-image: url(warwick.png);
+}
+.third{
+    border-image: linear-gradient(to bottom left,
+    transparent,rgb(0, 0, 0),
+    transparent)3;
+    border-right: transparent ;
+    box-shadow:  6px 6px 12px 0px rgb(0, 0, 0);
+    background-image: url(zed.png);
+}
+.descrição{
+border-image: linear-gradient(to bottom, transparent
+    ,#000, transparent) 3;
+    border-right: transparent;
+    box-shadow: 6px 6px 12px 0px rgb(0, 0, 0);
+
+}
